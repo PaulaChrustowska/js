@@ -30,10 +30,19 @@ let result = fullName.toLowerCase();  //zamienia na małe litery
 
 console.log(result, fullName);  //zestawia ze sobą
 
-let index = email.indexOf('@')       //znajduje słowo/zmienną w stringu / argument
+let index = email.indexOf('@')       //znajduje słowo/zmienną w stringu na danej pozycji / argument
 console.log(index);
 
+//common string methods
+
+let email = 'paula.chrustowska@gmail.com';
+
+ let result = email.lastIndexOf('a');
+
+console.log(result);
+
+console.log(fullName.toUpperCase);
 
 
-
+ 
 

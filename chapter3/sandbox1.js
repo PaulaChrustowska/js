@@ -1,5 +1,5 @@
-//let radius = 10;
-//const pi = 3.14;
+let radius = 10;
+const pi = 3.14;
 
 //console.log(radius, pi);
 
@@ -25,11 +25,44 @@
 
 //console.log(result);
 
-let like = 10;
+//let likes = 10;
 
-likes = likes + 1;
+//likes++;                               // ++ dodaje o 1
+
+//console.log(likes);
+
+//let likes = 12;
+
+//likes --;                              // -- odejmuje o 1
+
+//console.log(likes);
+
+let likes = 100;
+
+//likes += 12;                                 // += dodaje przypisaną wartość
+
+
+
+//likes -= 5;                                   // -= odejmuje przypisana wartość
+
+
+//likes *= 2;                           //mnozy daną wartośc o wskazaną wartośc
+
+
+//likes /= 3;               //dzieli daną wartość o wskazana wartość
 
 console.log(likes);
+
+//NaN komunikat, gdy nie mozliwe jest zestawienie ze soba dwóch zmeinnych not a number
+
+//CONCATENATE
+
+
+let result = 'my neurons have ' + likes + ' likes';
+console.log(result);
+
+
+
 
 
 

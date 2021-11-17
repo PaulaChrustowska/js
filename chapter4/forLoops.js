@@ -33,3 +33,5 @@ for(let = 1; i = 12; i++){
 
 console.log('loop finished');
 
+
+for

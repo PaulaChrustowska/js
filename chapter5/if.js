@@ -22,6 +22,6 @@
 
 const password = 'blue';
 
-if(password.length >= 4){
-    console.log("it's OK");
+if (password.length >= 4) {
+  console.log("it's OK");
 }

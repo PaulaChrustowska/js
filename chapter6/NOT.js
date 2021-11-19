@@ -29,3 +29,4 @@ for(let i = 0; i <scores.length; i++){
         break;
     }
 }
+

@@ -1,4 +1,4 @@
-const grade = "C";
+const grade = "dupadupadupa";
 
 switch(grade){
     case 'A':
@@ -16,6 +16,6 @@ switch(grade){
     case 'E':
         console.log('you got an E!');
       break;
-    default;
+    default:
         console.log('not a valid grade');
 }

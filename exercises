@@ -1,4 +1,0 @@
-let person = {
-    name : "Paula";
-    age :35
-    }

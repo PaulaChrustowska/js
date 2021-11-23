@@ -28,10 +28,9 @@
 //      greet();
 
 
-     const greet = () => {
-        console.log('have a good monday!');
-         }
+    //  const greet = () => {
+    //     console.log('have a good monday!');
+    //      }
          
-          greet();
-
+    //       greet();
 

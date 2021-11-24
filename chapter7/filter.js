@@ -27,7 +27,7 @@ const numberOfShoes = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]
 // console.log(result)
 
 
-const result = numberOfShoes.sort(function{return b - a});
+
 
 
 
@@ -39,5 +39,64 @@ const result = numberOfShoes.sort(function{return b - a});
 
 // const result = numbersOf_students.reverse()
 // console.log(result)
+
+
+//cw 4
+
+const workers = [
+    {
+      id: 10,
+      name: "Batman",
+      age: 21,
+      department: "Director",
+      sex: 'male,'
+    },
+    {
+      id: 13,
+      name: "Jocker",
+      age: 32,
+      department: "Administration",
+      sex: 'male',
+
+    },
+    {
+      id: 41,
+      name: "Women Cat",
+      age: 27,
+      department: "Manager",
+      sex: 'female',
+    },
+    {
+      id: 99,
+      name: "Spiderman",
+      age: 41,
+      department: "HR specialist",
+      sex: 'male',
+    }
+  ]
+  
+
+//   const id = i => i =10
+//   const result = workers.filter(id)
+//   console.log(result)
+
+
+// const age = a => a.age >= 22
+// const result = workers.filter(age)
+// console.log(result)
+
+
+
+// const sex = s => s.sex ==="male"
+// const result = workers.filter(sex)
+// console.log(result)
+
+
+
+const sex = s => s.sex ==="female"
+const result = workers.filter(sex)
+console.log(result)
+
+
 
 

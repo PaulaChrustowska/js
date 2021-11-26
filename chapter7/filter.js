@@ -93,8 +93,20 @@ const workers = [
 
 
 
-const sex = s => s.sex ==="female"
-const result = workers.filter(sex)
+// const sex = s => s.sex ==="female"
+// const result = workers.filter(sex)
+// console.log(result)
+
+// const department = d => d.department == "Manager"
+// const result = workers.filter(department)
+// console.log(result)
+
+// const id = i  => i.id == 41
+// const result = workers.filter(id)
+// console.log(result)
+
+const age = a => a.age > 50
+const result = workers.filter(age)
 console.log(result)
 
 

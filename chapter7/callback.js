@@ -79,7 +79,8 @@ const users = [
 ]
 
 
+const isMale = person => person.sex === 'male'  // true | false
+const isFemale = p => p.sex === 'female'
 
-
-
-const isMale = isM => isM = 'male'
+console.log(isMale(users[0]))
+console.log(isFemale(users[0]))

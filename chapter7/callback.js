@@ -26,10 +26,3 @@
 
 
 
-const add = (y, x) => y + x
-
-const arr = [5, 8]
-const result = arr.map(add)
-
-console.log(result)
-

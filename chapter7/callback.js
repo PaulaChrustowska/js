@@ -82,3 +82,4 @@ const users = [
 
 
 
+const isMale = isM => isM = 'male'

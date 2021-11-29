@@ -99,16 +99,32 @@ const users = [
 // console.log(result)
 
 
-// const nameOfInterests = person =>  person.interests[0].title === 'lego'
+// const nameOfInterests = person =>  person.interests[0] === 'lego'
 // const isEmilka = person => person.name === 'Emilka'
 // const result = users.filter(nameOfInterests).filter(isEmilka)
 // console.log(result)
 
 
 
-const howLong = person =>  person.interests[0].experienceInYears = 20
+// const howLong = person =>  person.interests[0].experienceInYears = 20
+// const isKrzys = person => person.name === 'Krzys'
+// const result = users.filter(howLong).filter(isKrzys)
+// console.log(result)
+
+
+
+// const howLong = person =>  person.interests[0].experienceInYears = 2
+// const isHubi = person => person.name === 'Hubert'
+// const result = users.filter(howLong).filter(isHubi)
+// console.log(result)
+
+
+const hasLevelHardInterest = person => person.interests[0].level === 'hard'
+
+const descriptionOf = person => `hello my name is: ${person.name}`
 const isKrzys = person => person.name === 'Krzys'
-const result = users.filter(howLong).filter(isKrzys)
+const result = users.filter(hasLevelHardInterest).filter(isKrzys).map(descriptionOf)
 console.log(result)
+
 
 

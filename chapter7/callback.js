@@ -81,27 +81,25 @@ const users = [
 
 // const isMale = person => person.sex === 'male'  // true | false
 // const isFemale = p => p.sex === 'female'
-
 // // console.log(isMale(users[0]))
 //  // console.log(isFemale(users[0]))
 
 // const hasOneInterest = person => person.interests.length === 1
+// console.log(hasOneInterest(users[2]))
 
-//  // console.log(hasOneInterest(users[2]))
 // const result = users.filter(isMale).filter(hasOneInterest)
 
- const hasLevelEntryInterest = person => person.interests[0].level === 'entry'
- const descriptionOf = person => `hello my name is: ${person.name}`
+//  const hasLevelEntryInterest = person => person.interests[0].level === 'entry'
+//  const descriptionOf = person => `hello my name is: ${person.name}`
 
- const isEmilka = person => person.name === 'Emilka'
+//  const isEmilka = person => person.name === 'Emilka'
 
 //  const result = users.filter(hasLevelEntryInterest).filter(isEmilka).map(descriptionOf) //uzytkownik, ktory ma jedno zainteresowanie i to jedno zainteresowanie musi byc na lewelu entry
 
 // console.log(result)
 
 
-const nameOfinterestsIs = person => person.interests.title === 'fauna' 
-
-const howLong = person => person.experienceInYears === 2
-const result = users.filter(nameOfinterestsIs).filter(howLong)
+const nameOfInterests = person =>  person.interests[0].title === 'lego'
+const isEmilka = person => person.name === 'Emilka'
+const result = users.filter(nameOfInterests).filter(isEmilka)
 console.log(result)

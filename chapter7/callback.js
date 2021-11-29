@@ -119,12 +119,16 @@ const users = [
 // console.log(result)
 
 
-const hasLevelHardInterest = person => person.interests[0].level === 'hard'
+// const hasLevelHardInterest = person => person.interests[0].level === 'hard'
+// const descriptionOf = person => `hello my name is: ${person.name}`
+// const isKrzys = person => person.name === 'Krzys'
+// const result = users.filter(hasLevelHardInterest).filter(isKrzys).map(descriptionOf)
+// console.log(result)
 
-const descriptionOf = person => `hello my name is: ${person.name}`
-const isKrzys = person => person.name === 'Krzys'
-const result = users.filter(hasLevelHardInterest).filter(isKrzys).map(descriptionOf)
-console.log(result)
+
+
+const howLong = person => person.experienceInYears === 2
+console.log = users.filter(howLong)
 
 
 

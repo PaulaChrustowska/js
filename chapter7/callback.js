@@ -99,7 +99,16 @@ const users = [
 // console.log(result)
 
 
-const nameOfInterests = person =>  person.interests[0].title === 'lego'
-const isEmilka = person => person.name === 'Emilka'
-const result = users.filter(nameOfInterests).filter(isEmilka)
+// const nameOfInterests = person =>  person.interests[0].title === 'lego'
+// const isEmilka = person => person.name === 'Emilka'
+// const result = users.filter(nameOfInterests).filter(isEmilka)
+// console.log(result)
+
+
+
+const howLong = person =>  person.interests[0].experienceInYears = 20
+const isKrzys = person => person.name === 'Krzys'
+const result = users.filter(howLong).filter(isKrzys)
 console.log(result)
+
+

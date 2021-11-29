@@ -126,9 +126,19 @@ const users = [
 // console.log(result)
 
 
+// const age = a => a.age >= 3
+// const hasLevelEntryInterest = person => person.interests[0].level === 'entry'
+// const result = users.filter(age).filter(hasLevelEntryInterest)
+// console.log(result)
 
-const howLong = person => person.experienceInYears === 2
-console.log = users.filter(howLong)
+
+const age = a => a.age >= 6
+const descriptionOf = person => `hello my name is: ${person.name}`
+const hasLevelHardInterest = person => person.interests[0].level === 'hard'
+
+const result = users.filter(age).filter(hasLevelHardInterest).map(descriptionOf)
+console.log(result)
+
 
 
 

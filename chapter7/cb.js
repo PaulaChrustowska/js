@@ -13,7 +13,6 @@ const room = [
                 size: 3
              },
              { 
-    
                 type: 'comics',
                 new: true,
                 size: 5
@@ -35,7 +34,7 @@ const room = [
     },
     {
         furniture: 'dresser',
-        kolor: 'brown',
+        colour: 'brown',
         status: 'almostEmpty',
         mugs: [
             {
@@ -47,5 +46,14 @@ const room = [
     }
 ]
 
+
+// const furnitureColour = room => room.colour === 'grey'
+// const result = room.filter(furnitureColour)
+// console.log(result)
+
+
+const furnitureColour = room => room.colour === 'brown'
+const result = room.filter(furnitureColour)
+console.log(result)
 
         

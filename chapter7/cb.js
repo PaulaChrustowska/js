@@ -6,9 +6,9 @@ const room = [
         furniture: 'warderobe',
         colour: 'grey',
         status: 'full',
-        books: [
+        shelf: [
              {
-                type: 'adventure',
+                type: 'adventureBooks',
                 old: false,
                 size: 3
              },
@@ -23,9 +23,9 @@ const room = [
         furniture: 'rack',
         colour: 'white',
         status: 'almostEmpty',
-        ssweaters: [
+        shelf: [
             {
-                type: 'woll',
+                type: 'wollSewaters',
                 new: true,
                 size: 42
             }
@@ -36,9 +36,9 @@ const room = [
         furniture: 'dresser',
         colour: 'brown',
         status: 'almostEmpty',
-        mugs: [
+        shelf: [
             {
-                type: 'porcelain',
+                type: 'porcelainMugs',
                 new: true,
                 size: 6
             }
@@ -52,8 +52,25 @@ const room = [
 // console.log(result)
 
 
-const furnitureColour = room => room.colour === 'brown'
-const result = room.filter(furnitureColour)
-console.log(result)
+// const furnitureColour = room => room.colour === 'brown'
+// const result = room.filter(furnitureColour)
+// console.log(result)
 
-        
+
+// const typeOfFurniture = room => room.furniture === 'rack'
+// const descriptionOf = room => `Hello, my name is: ${room.furniture}` 
+// const isRack = room => room.furniture === 'rack'
+// const result = room.filter(typeOfFurniture).filter(isRack).map(descriptionOf)
+// console.log(result)
+
+// const statusEmpty = room => room.furniture.status === 'almostEmpty'
+// const statusFull = room => room.furniture.status === 'full'
+// // console.log(statusEmpty(room[0]))
+// console.log(statusFull(room[0]))
+
+
+// const hasTwoShelfs = thing => thing.shelf.length ===  2
+// console.log(hasTwoShelfs(room[0]))
+
+const hasOneShelfs = thing => thing.shelf.length === 1 
+ console.log(hasOneShelfs(room[1]))

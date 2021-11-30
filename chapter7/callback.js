@@ -52,7 +52,7 @@ const users = [
                 level: 'entry',
                 experienceInYears: 2
             },
-            {console.log(Object.keys(users[0]))
+            {
                 title: 'fauna',
                 level: 'intermediate',
                 experienceInYears: 2
@@ -123,11 +123,13 @@ const users = [
 // console.log(result)
 
 
-// const hasLevelHardInterest = person => person.interests[0].level === 'hard'
-// const descriptionOf = person => `hello my name is: ${person.name}`
-// const isKrzys = person => person.name === 'Krzys'
-// const result = users.filter(hasLevelHardInterest).filter(isKrzys).map(descriptionOf)
-// console.log(result)
+const hasLevelHardInterest = person => person.interests[0].level === 'hard'
+const descriptionOf = person => `hello my name is: ${person.name}`
+const isKrzys = person => person.name === 'Krzys'
+const result = users.filter(hasLevelHardInterest).filter(isKrzys).map(descriptionOf)
+console.log(result)
+
+
 
 
 // const age = a => a.age >= 3
@@ -156,7 +158,7 @@ const users = [
 
 //Thank You very much, my TEACHER :)
 
-const howLong = person => person.interests[0].experienceInYears === 2
-const result = users.filter(howLong)
-console.log(howLong(users[0]))
-console.log(Object.keys(users[0]))
+// const howLong = person => person.interests[0].experienceInYears === 2
+// const result = users.filter(howLong)
+// console.log(howLong(users[0]))
+// console.log(Object.keys(users[0]))

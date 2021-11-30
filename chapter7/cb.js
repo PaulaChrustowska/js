@@ -9,12 +9,12 @@ const room = [
         shelf: [
              {
                 type: 'adventureBooks',
-                old: false,
+                state: false,
                 size: 3
              },
              { 
                 type: 'comics',
-                new: true,
+                state: true,
                 size: 5
             }
         ],
@@ -26,7 +26,7 @@ const room = [
         shelf: [
             {
                 type: 'wollSewaters',
-                new: true,
+                state: true,
                 size: 42
             }
         ],
@@ -39,7 +39,7 @@ const room = [
         shelf: [
             {
                 type: 'porcelainMugs',
-                new: true,
+                state: true,
                 size: 6
             }
         ],  
@@ -48,10 +48,9 @@ const room = [
 
 
 // const furnitureColour = room => room.colour === 'grey'
-// const result = room.filter(furnitureColour)
+// const result = room.filter(furnitureColour)const isNew = furniture => furniture[2].shelf = true 
+// const result = furniture.filter(isNew)
 // console.log(result)
-
-
 // const furnitureColour = room => room.colour === 'brown'
 // const result = room.filter(furnitureColour)
 // console.log(result)
@@ -72,6 +71,9 @@ const room = [
 // const hasTwoShelfs = thing => thing.shelf.length ===  2
 // console.log(hasTwoShelfs(room[0]))
 
+// const isNew = furniture => furniture[2].shelf = true 
+// const result = furniture.filter(isNew)
+// console.log(result)
 // const hasOneShelfs = thing => thing.shelf.length === 1 
 //  console.log(hasOneShelfs(room[1]))
 
@@ -89,8 +91,32 @@ const room = [
 
 
 
-const isFull = thing => thing.status === 'full'
+// const isFull = thing => thing.status === 'full'
 // const descriptionOf = thing => `hello, my name is: ${thing.furniture}`
+// const isWarderobe = thing => thing.furniture === 'warderobe'
+// const result = room.filter(isFull).filter(isWarderobe).map(descriptionOf)
+
+
+// const isFull = thing => thing.status === 'full'
+// const isWarderobe = thing => thing.furniture === 'warderobe'
+// const result = room.filter(isFull).filter(isWarderobe)
+
+
+// console.log(result)
+
+
+// const whatS = thing => thing.shelf[0].size = 5
+//  const descriptionOf = thing => `my name is: ${thing.furniture}`
+
+// const isWarderobe = thing => thing.furniture === 'warderobe'
+// const result = room.filter(whatS).filter(isWarderobe)
+// console.log(result)
+
+
+
+const typeIsAdventure = thing => thing.shelf[0].type === 'adventureBooks'
+// const descriptionOf = thing => `my name is: ${thing.furniture}`
 const isWarderobe = thing => thing.furniture === 'warderobe'
-const result = room.filter(isFull).filter(isWarderobe)
+
+const result = room.filter(typeIsAdventure).filter(isWarderobe)
 console.log(result)
